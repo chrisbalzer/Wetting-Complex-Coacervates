@@ -1,0 +1,53 @@
+*****************************************************************************
+Wetting of Complex Coacervates near a Single Surface - INPUT FILE
+=============================================================================
+/* Set the bulk volume fraction of polymer */
+POLYMER_FRACTION:
+1.0E-5; 1.0E-5;
+=============================================================================
+/* Set the bulk volume fraction of salt */
+SALT_FRACTION:
+0.1; 0.1;
+=============================================================================
+/* Set the chain length for each species */
+CHAIN_LENGTH:
+100; 100;
+=============================================================================
+/* Set the surface properties.
+Type (0 potential / 1 surface charge); Surface 1 (reduced units);
+Polymer-Surface Interaction 1; P-S Interaction 2*/
+SURFACE:
+0; 0.0; -0.05; -0.05;
+=============================================================================
+/* Set the valency of each component: Z_P1, Z_P2, Z_pos; Z_neg */
+VALENCY:
+1; -1; 1; -1;
+=============================================================================
+/* Set the diameter (length units): D_P1, D_P2, D_pos; D_neg */
+DIAMETER:
+1.0; 1.0; 1.0; 1.0;
+=============================================================================
+/* System size; grid sizing; Bjerrum length (length units);*/
+SYSTEM:
+50.0; 0.1; 1.785;
+=============================================================================
+/* Set the iterative parameters: Maximum Iterations; Error Tolerance; Mixing type; Mixing Coefficient */
+ITERATIVE:
+1E6; 1E-10; 1; 5e-3;
+=============================================================================
+/* Set the parameters for stepping: Step type, Number of Steps; Step Size */
+STEPS:
+2; 250; 0.05;
+=============================================================================
+/* Selected the number of CPUs for OpenMP to use (if 1 then OpenMP is not used)*/
+CPUs:
+1;
+=============================================================================
+/* Print all density profiles, error, and chemical potential info*/
+OUT_DATA:
+0;
+=============================================================================
+/* Set the path of the output file */
+OUT_PATH:
+example/
+=============================================================================

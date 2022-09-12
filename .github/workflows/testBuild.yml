@@ -1,0 +1,16 @@
+name: "Build Test"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Build-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Compile using Make
+        run: |
+          cd ${{ github.workspace }}/run
+          make
+          make clean
