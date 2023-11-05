@@ -11,16 +11,15 @@ SCFT::SCFT() = default;
 
 /* Default destructor */
 SCFT::~SCFT() {
-  // Free memory
-  finalizeSystem();
+    finalizeSystem();
 
-  delete [] Z;
-  delete [] D;
-  delete [] phiB;
-  delete [] mu;
-  delete [] muEx;
-  delete [] N;
-  delete [] uSurf;
+    delete [] Z;
+    delete [] D;
+    delete [] phiB;
+    delete [] mu;
+    delete [] muEx;
+    delete [] N;
+    delete [] uSurf;
 }
 
 /* Constructor */
@@ -200,20 +199,23 @@ void SCFT::finalizeSystem() {
         delete [] mu_localEx[i];
         delete [] exAdsStore[i];
     }
+    delete [] phi;
+    delete [] phiNew;
+    delete [] mu_local;
+    delete [] mu_localEx;
+    delete [] exAdsStore;
+
     for (int i = 0; i < numPolymers; i++) {
         delete [] varphi[i];
     }
+    delete [] varphi;
+
+
     delete [] z;
     delete [] Psi;
     delete [] rhoZ;
-    delete [] varphi;
-    delete [] mu_local;
-    delete [] mu_localEx;
-    delete [] phi;
-    delete [] phiNew;
     delete [] prevMix;
-    delete [] exAdsStore;
-
+    
     delete [] X;
     delete [] F;
 
