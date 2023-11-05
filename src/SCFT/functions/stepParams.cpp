@@ -51,7 +51,6 @@ void SCFT::stepParameters() {
                 if(ds0 < 0) phiB[i] = pow(10, log10(phiB[i]) - 0.01);
             }
             X_Cont = log10(phiB[0]);
-            X[lastIndx] = X_Cont;
 
             // Increment s
             s += 0.01;
@@ -130,20 +129,5 @@ void SCFT::stepParameters() {
             // Increment s
             s += ds;
         }
-
-        // Output for testing
-        // std::cout<<"----Continuation (Polymer Density)-----"<<std::endl;
-        // std::cout<<" step      = "<<stepIter<<std::endl;
-        // std::cout<<" s         = "<<s<<std::endl;
-        // std::cout<<" ds        = "<<ds<<std::endl;
-        // std::cout<<" dYds      = "<<dYds[lastIndx]<<std::endl;
-        // if(stepIter > 2*contKeep) {
-        //   std::cout<<" ratio     = "<<ratio<<std::endl;
-        //   std::cout<<" e1        = "<<e1<<std::endl;
-        //   std::cout<<" e2        = "<<e2<<std::endl;
-        // }
-        // std::cout<<" c_param   = "<<pow(10,X_Cont)<<std::endl;
-        // std::cout<<" turnCount   "<<turnCount<<std::endl;
-        // if(stepIter > 2) std::cout<<" gammaTrack  "<<gammaTrack<<std::endl;
     }
 }
