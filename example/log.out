@@ -1,0 +1,252 @@
+=======================Wetting of Complex Coacervates========================= 
+                  Copyright Owners: Chris Balzer (2022) 
+============================================================================== 
+
+=============== 
+INITIALIZATION 
+=============== 
+Data read from input file   : .//input.dat 
+Writing output to directory : ./example// 
+    Bulk Volume Fraction    : 1e-05; 1e-05; 0.1; 0.1;  
+    Chain Length            : 100; 100;  
+    Valence                 : 1; -1; 1; -1;  
+    Diameter (Pos : Neg)    : 1; 1; 1; 1;  
+    Surface Interaction     : -0.05; -0.05;  
+    Surface Type            : Fixed Potential 
+        Surface BC          : 0 beta*e*V 
+    System Size             : 50 
+    Grid Sizing             : 0.1 
+    Bjerrum Length          : 1.785 
+    Error Tolerance         : 1e-10 
+    Step Type               : Continuation - Polymer fraction 
+    Mixing                  : Anderson Acceleration 
+    Number of Steps         : 250 
+    Step Size               : 0.05 
+    Number of CPUs          : 1 
+        Only 1 processor - not using OpenMP 
+
+=============== 
+RUNNING SCFT 
+=============== 
+Complete - Step 0:  duration (min) = 1.334755, iters = 375000 
+Complete - Step 1:  duration (min) = 0.039845, iters = 8340 
+Complete - Step 2:  duration (min) = 0.046905, iters = 9763 
+Complete - Step 3:  duration (min) = 0.048524, iters = 10087 
+Complete - Step 4:  duration (min) = 0.046826, iters = 9759 
+Complete - Step 5:  duration (min) = 0.031823, iters = 6677 
+Complete - Step 6:  duration (min) = 0.034659, iters = 7242 
+Complete - Step 7:  duration (min) = 0.035450, iters = 7381 
+Complete - Step 8:  duration (min) = 0.041354, iters = 8589 
+Complete - Step 9:  duration (min) = 0.035422, iters = 7399 
+Complete - Step 10:  duration (min) = 0.033907, iters = 7094 
+Complete - Step 11:  duration (min) = 0.032646, iters = 6845 
+Complete - Step 12:  duration (min) = 0.034793, iters = 7267 
+Complete - Step 13:  duration (min) = 0.033590, iters = 7030 
+Complete - Step 14:  duration (min) = 0.036547, iters = 7618 
+Complete - Step 15:  duration (min) = 0.035474, iters = 7410 
+Complete - Step 16:  duration (min) = 0.036538, iters = 7618 
+Complete - Step 17:  duration (min) = 0.036793, iters = 7666 
+Complete - Step 18:  duration (min) = 0.036521, iters = 7610 
+Complete - Step 19:  duration (min) = 0.045504, iters = 9421 
+Complete - Step 20:  duration (min) = 0.044795, iters = 9279 
+Complete - Step 21:  duration (min) = 0.042700, iters = 8852 
+Complete - Step 22:  duration (min) = 0.041945, iters = 8697 
+Complete - Step 23:  duration (min) = 0.042901, iters = 8890 
+Complete - Step 24:  duration (min) = 0.040718, iters = 8458 
+Complete - Step 25:  duration (min) = 0.044105, iters = 9129 
+Complete - Step 26:  duration (min) = 0.042679, iters = 8846 
+Complete - Step 27:  duration (min) = 0.042100, iters = 8729 
+Complete - Step 28:  duration (min) = 0.050076, iters = 10332 
+Complete - Step 29:  duration (min) = 0.037583, iters = 7826 
+Complete - Step 30:  duration (min) = 0.040496, iters = 8410 
+Complete - Step 31:  duration (min) = 0.058321, iters = 11992 
+Complete - Step 32:  duration (min) = 0.044701, iters = 9246 
+Complete - Step 33:  duration (min) = 0.046054, iters = 9520 
+Complete - Step 34:  duration (min) = 0.042404, iters = 8800 
+Complete - Step 35:  duration (min) = 0.035790, iters = 7477 
+Complete - Step 36:  duration (min) = 0.045342, iters = 9391 
+Complete - Step 37:  duration (min) = 0.038565, iters = 8033 
+Complete - Step 38:  duration (min) = 0.034237, iters = 7156 
+Complete - Step 39:  duration (min) = 0.023477, iters = 5000 
+Complete - Step 40:  duration (min) = 0.023897, iters = 5084 
+Complete - Step 41:  duration (min) = 0.024059, iters = 5122 
+Complete - Step 42:  duration (min) = 0.023441, iters = 5000 
+Complete - Step 43:  duration (min) = 0.023465, iters = 5000 
+Complete - Step 44:  duration (min) = 0.024079, iters = 5124 
+Complete - Step 45:  duration (min) = 0.023440, iters = 5000 
+Complete - Step 46:  duration (min) = 0.023443, iters = 5000 
+Complete - Step 47:  duration (min) = 0.023459, iters = 5000 
+Complete - Step 48:  duration (min) = 0.023448, iters = 5000 
+Complete - Step 49:  duration (min) = 0.023444, iters = 5000 
+Complete - Step 50:  duration (min) = 0.023553, iters = 5021 
+Complete - Step 51:  duration (min) = 0.023436, iters = 5000 
+Complete - Step 52:  duration (min) = 0.029053, iters = 6128 
+Complete - Step 53:  duration (min) = 0.023448, iters = 5000 
+Complete - Step 54:  duration (min) = 0.028922, iters = 6017 
+Complete - Step 55:  duration (min) = 0.027422, iters = 5635 
+Complete - Step 56:  duration (min) = 0.044405, iters = 9135 
+Complete - Step 57:  duration (min) = 0.023472, iters = 5001 
+Complete - Step 58:  duration (min) = 0.067828, iters = 13888 
+Complete - Step 59:  duration (min) = 0.025579, iters = 5423 
+Complete - Step 60:  duration (min) = 0.023416, iters = 5000 
+Complete - Step 61:  duration (min) = 0.054337, iters = 11205 
+Complete - Step 62:  duration (min) = 0.041678, iters = 8662 
+Complete - Step 63:  duration (min) = 0.049741, iters = 10283 
+Complete - Step 64:  duration (min) = 0.038984, iters = 8118 
+Complete - Step 65:  duration (min) = 0.077521, iters = 15817 
+Complete - Step 66:  duration (min) = 0.058227, iters = 11973 
+Complete - Step 67:  duration (min) = 0.030636, iters = 6437 
+Complete - Step 68:  duration (min) = 0.023444, iters = 5000 
+Complete - Step 69:  duration (min) = 0.034368, iters = 7186 
+Complete - Step 70:  duration (min) = 0.025621, iters = 5435 
+Complete - Step 71:  duration (min) = 0.046592, iters = 9600 
+Complete - Step 72:  duration (min) = 0.050340, iters = 10338 
+Complete - Step 73:  duration (min) = 0.025734, iters = 5458 
+Complete - Step 74:  duration (min) = 0.031076, iters = 6525 
+Complete - Step 75:  duration (min) = 0.032716, iters = 6851 
+Complete - Step 76:  duration (min) = 0.039548, iters = 8231 
+Complete - Step 77:  duration (min) = 0.029860, iters = 6285 
+Complete - Step 78:  duration (min) = 0.040754, iters = 8474 
+Complete - Step 79:  duration (min) = 0.044044, iters = 9075 
+Complete - Step 80:  duration (min) = 0.056833, iters = 11680 
+Complete - Step 81:  duration (min) = 0.033673, iters = 7050 
+Complete - Step 82:  duration (min) = 0.024519, iters = 5206 
+Complete - Step 83:  duration (min) = 0.030349, iters = 6373 
+Complete - Step 84:  duration (min) = 0.044439, iters = 9183 
+Complete - Step 85:  duration (min) = 0.052802, iters = 10878 
+Complete - Step 86:  duration (min) = 0.029384, iters = 6190 
+Complete - Step 87:  duration (min) = 0.041978, iters = 8718 
+Complete - Step 88:  duration (min) = 0.039272, iters = 8164 
+Complete - Step 89:  duration (min) = 0.041705, iters = 8633 
+Complete - Step 90:  duration (min) = 0.047337, iters = 9779 
+Complete - Step 91:  duration (min) = 0.035897, iters = 7479 
+Complete - Step 92:  duration (min) = 0.023490, iters = 5000 
+Complete - Step 93:  duration (min) = 0.029082, iters = 6120 
+Complete - Step 94:  duration (min) = 0.023470, iters = 5000 
+Complete - Step 95:  duration (min) = 0.027103, iters = 5732 
+Complete - Step 96:  duration (min) = 0.041346, iters = 8584 
+Complete - Step 97:  duration (min) = 0.030035, iters = 6314 
+Complete - Step 98:  duration (min) = 0.023726, iters = 5052 
+Complete - Step 99:  duration (min) = 0.027236, iters = 5754 
+Complete - Step 100:  duration (min) = 0.023972, iters = 5097 
+Complete - Step 101:  duration (min) = 0.024057, iters = 5116 
+Complete - Step 102:  duration (min) = 0.023483, iters = 5000 
+Complete - Step 103:  duration (min) = 0.023523, iters = 5000 
+Complete - Step 104:  duration (min) = 0.023494, iters = 5000 
+Complete - Step 105:  duration (min) = 0.023586, iters = 5000 
+Complete - Step 106:  duration (min) = 0.023488, iters = 5000 
+Complete - Step 107:  duration (min) = 0.023498, iters = 5000 
+Complete - Step 108:  duration (min) = 0.023511, iters = 5000 
+Complete - Step 109:  duration (min) = 0.023472, iters = 5000 
+Complete - Step 110:  duration (min) = 0.023488, iters = 5000 
+Complete - Step 111:  duration (min) = 0.023485, iters = 5000 
+Complete - Step 112:  duration (min) = 0.023535, iters = 5000 
+Complete - Step 113:  duration (min) = 0.023506, iters = 5000 
+Complete - Step 114:  duration (min) = 0.023481, iters = 5000 
+Complete - Step 115:  duration (min) = 0.023498, iters = 5000 
+Complete - Step 116:  duration (min) = 0.023507, iters = 5000 
+Complete - Step 117:  duration (min) = 0.023509, iters = 5000 
+Complete - Step 118:  duration (min) = 0.023500, iters = 5000 
+Complete - Step 119:  duration (min) = 0.023496, iters = 5000 
+Complete - Step 120:  duration (min) = 0.023513, iters = 5000 
+Complete - Step 121:  duration (min) = 0.023502, iters = 5000 
+Complete - Step 122:  duration (min) = 0.023544, iters = 5000 
+Complete - Step 123:  duration (min) = 0.023483, iters = 5000 
+Complete - Step 124:  duration (min) = 0.023490, iters = 5000 
+Complete - Step 125:  duration (min) = 0.023478, iters = 5000 
+Complete - Step 126:  duration (min) = 0.023473, iters = 5000 
+Complete - Step 127:  duration (min) = 0.023508, iters = 5000 
+Complete - Step 128:  duration (min) = 0.023516, iters = 5000 
+Complete - Step 129:  duration (min) = 0.023500, iters = 5000 
+Complete - Step 130:  duration (min) = 0.023538, iters = 5000 
+Complete - Step 131:  duration (min) = 0.023514, iters = 5000 
+Complete - Step 132:  duration (min) = 0.023493, iters = 5000 
+Complete - Step 133:  duration (min) = 0.023512, iters = 5000 
+Complete - Step 134:  duration (min) = 0.023534, iters = 5000 
+Complete - Step 135:  duration (min) = 0.023529, iters = 5000 
+Complete - Step 136:  duration (min) = 0.023544, iters = 5000 
+Complete - Step 137:  duration (min) = 0.023545, iters = 5000 
+Complete - Step 138:  duration (min) = 0.023575, iters = 5000 
+Complete - Step 139:  duration (min) = 0.023526, iters = 5000 
+Complete - Step 140:  duration (min) = 0.023533, iters = 5000 
+Complete - Step 141:  duration (min) = 0.023529, iters = 5000 
+Complete - Step 142:  duration (min) = 0.023522, iters = 5000 
+Complete - Step 143:  duration (min) = 0.023544, iters = 5000 
+Complete - Step 144:  duration (min) = 0.023525, iters = 5000 
+Complete - Step 145:  duration (min) = 0.023544, iters = 5000 
+Complete - Step 146:  duration (min) = 0.023545, iters = 5000 
+Complete - Step 147:  duration (min) = 0.023599, iters = 5000 
+Complete - Step 148:  duration (min) = 0.023548, iters = 5000 
+Complete - Step 149:  duration (min) = 0.023583, iters = 5000 
+Complete - Step 150:  duration (min) = 0.023626, iters = 5000 
+Complete - Step 151:  duration (min) = 0.023596, iters = 5000 
+Complete - Step 152:  duration (min) = 0.023563, iters = 5000 
+Complete - Step 153:  duration (min) = 0.023548, iters = 5000 
+Complete - Step 154:  duration (min) = 0.023545, iters = 5000 
+Complete - Step 155:  duration (min) = 0.023928, iters = 5000 
+Complete - Step 156:  duration (min) = 0.024442, iters = 5000 
+Complete - Step 157:  duration (min) = 0.023826, iters = 5000 
+Complete - Step 158:  duration (min) = 0.023550, iters = 5000 
+Complete - Step 159:  duration (min) = 0.023581, iters = 5000 
+Complete - Step 160:  duration (min) = 0.023591, iters = 5000 
+Complete - Step 161:  duration (min) = 0.027854, iters = 5847 
+Complete - Step 162:  duration (min) = 0.029003, iters = 6047 
+Complete - Step 163:  duration (min) = 0.028691, iters = 6025 
+Complete - Step 164:  duration (min) = 0.064693, iters = 13204 
+Complete - Step 165:  duration (min) = 0.032934, iters = 6872 
+Complete - Step 166:  duration (min) = 0.041369, iters = 8557 
+Complete - Step 167:  duration (min) = 0.032107, iters = 6694 
+Complete - Step 168:  duration (min) = 0.043986, iters = 9066 
+Complete - Step 169:  duration (min) = 0.048606, iters = 9996 
+Complete - Step 170:  duration (min) = 0.058510, iters = 11986 
+Complete - Step 171:  duration (min) = 0.039766, iters = 8224 
+Complete - Step 172:  duration (min) = 0.080537, iters = 16377 
+Complete - Step 173:  duration (min) = 0.060083, iters = 12298 
+Complete - Step 174:  duration (min) = 0.060913, iters = 12457 
+Complete - Step 175:  duration (min) = 0.064501, iters = 13202 
+Complete - Step 176:  duration (min) = 0.064613, iters = 13234 
+Complete - Step 177:  duration (min) = 0.061268, iters = 12562 
+Complete - Step 178:  duration (min) = 0.061404, iters = 12585 
+Complete - Step 179:  duration (min) = 0.072360, iters = 14789 
+Complete - Step 180:  duration (min) = 0.050953, iters = 10487 
+Complete - Step 181:  duration (min) = 0.067076, iters = 13707 
+Complete - Step 182:  duration (min) = 0.059696, iters = 12234 
+Complete - Step 183:  duration (min) = 0.063244, iters = 12954 
+Complete - Step 184:  duration (min) = 0.056952, iters = 11698 
+Complete - Step 185:  duration (min) = 0.081049, iters = 16511 
+Complete - Step 186:  duration (min) = 0.065220, iters = 13349 
+Complete - Step 187:  duration (min) = 0.065287, iters = 13315 
+Complete - Step 188:  duration (min) = 0.089103, iters = 18025 
+Complete - Step 189:  duration (min) = 0.048680, iters = 10045 
+Complete - Step 190:  duration (min) = 0.054207, iters = 11145 
+Complete - Step 191:  duration (min) = 0.075545, iters = 15414 
+Complete - Step 192:  duration (min) = 0.062503, iters = 12819 
+Complete - Step 193:  duration (min) = 0.069020, iters = 14123 
+Complete - Step 194:  duration (min) = 0.069467, iters = 14213 
+Complete - Step 195:  duration (min) = 0.068218, iters = 13952 
+Complete - Step 196:  duration (min) = 0.062060, iters = 12715 
+Complete - Step 197:  duration (min) = 0.062144, iters = 12733 
+Complete - Step 198:  duration (min) = 0.097657, iters = 19832 
+Complete - Step 199:  duration (min) = 0.065631, iters = 13399 
+Complete - Step 200:  duration (min) = 0.072856, iters = 14904 
+Complete - Step 201:  duration (min) = 0.077539, iters = 15824 
+Complete - Step 202:  duration (min) = 0.060095, iters = 12314 
+Complete - Step 203:  duration (min) = 0.065566, iters = 13407 
+Complete - Step 204:  duration (min) = 0.083042, iters = 16920 
+Complete - Step 205:  duration (min) = 0.052869, iters = 10884 
+Complete - Step 206:  duration (min) = 0.069038, iters = 14125 
+Complete - Step 207:  duration (min) = 0.076896, iters = 15704 
+Complete - Step 208:  duration (min) = 0.054812, iters = 10955 
+Complete - Step 209:  duration (min) = 0.064325, iters = 13103 
+Complete - Step 210:  duration (min) = 0.046486, iters = 9580 
+Complete - Step 211:  duration (min) = 0.054013, iters = 11054 
+Complete - Step 212:  duration (min) = 0.068219, iters = 13920 
+Complete - Step 213:  duration (min) = 0.043751, iters = 9025 
+Complete - Step 214:  duration (min) = 0.062014, iters = 12675 
+Complete - Step 215:  duration (min) = 0.076638, iters = 15581 
+Complete - Step 216:  duration (min) = 0.072636, iters = 14815 
+Stopping continuation at step 217 because of the excess adsorption exceeds the limit. 
+Complete - Step 217:  duration (min) = 0.070757, iters = 14433 
+
+Total Program Time         : 9.868942 minutes 
+Average Time per Iteration : 0.045270 minutes 
