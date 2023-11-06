@@ -3,10 +3,10 @@ This repository generally contains routines to study interfacial behavior for po
 
 **Author** - Christopher Balzer
 
-## Compiling Code
+## Compiling and Running Code
 Navigate to ``run/`` and compile using the Makefile with ``make``.  Note that the default compiler is ``g++-9``, but any ``g++`` compiler that has ``OpenMP`` support will work.
 
-## Starting a calculation
+### Starting a calculation
 Once you have compiled, edit the ``input.dat`` file as necessary. Then run the command
 
 ```
@@ -15,7 +15,7 @@ Once you have compiled, edit the ``input.dat`` file as necessary. Then run the c
 
 The output will automatically be generated in the ``run/example/`` folder.
 
-## Dependencies
+### Dependencies
 This code requires the header library [Eigen](https://gitlab.com/libeigen/eigen) to run. For convenience, the necessary parts of Eigen are included in ``src/external``.
 
 ## Numerics
@@ -38,3 +38,8 @@ Then, we seek to solve the fixed-point iteration problem $\mathbf{x} = \mathbf{F
 ```
 where the coefficients $`\beta = \rm{argmin} || (\mathbf{F}_k - \mathbf{x}_k) \beta ||_2 `$ with $`\sum  \beta = 1`$.  Thus, on each iteration, one must solve a least squares problem to determine the coefficients $\beta$. The value of $m$ determines how many previous iterations are used in making the next guess.
 
+## Example Results
+The example calculation calculates the equilibrium distribution and electric potential field near a single surface for a symmetrically adsorbing polycation/polyanion through the process of an adsorption isotherm. Namely, a sweep of the bulk polyelectrolyte density is done sequentially using a pseudo-arclength continuation (PAC) scheme. The salient results are shown below. The PAC algorithm allows for easy evaluation of the turning points (thermodyanmic spinodal points) based on the border between stable and unstable regions of the adsorption isotherm, which have been highlighted/colored.
+
+![Excess Adsorption](example/ExcessAdsorption.png)
+![Surface Tension](example/SurfaceTension.png)
