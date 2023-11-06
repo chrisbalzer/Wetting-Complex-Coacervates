@@ -481,6 +481,12 @@ void SCFT::setOutputFileStructure() {
     // Open files that will be open the whole time
     logStream.open(logFile.c_str(), std::fstream::out | std::ofstream::trunc);
     dataStream.open(dataFile.c_str(), std::fstream::out | std::ofstream::trunc);
+    
+    // Add data headers
+    dataStream << "# (0) Surf. Charge, (1) Surf. Pot., (2-3) Eta Poly., (4-7) Excess Adsorption, (8) Helmholtz, (9) Grand Potential, (10) Osmotic pressure, (11) Surface Tension, (12-15) Bulk Density, (16-19) Chemical Potential";
+    if(stepType == 2) dataStream << ", (20) s, (21) turnCount\n";
+    else dataStream << "\n";
+    
     logStream.close();
     dataStream.close();
 }
