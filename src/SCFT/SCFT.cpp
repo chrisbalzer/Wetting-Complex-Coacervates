@@ -146,7 +146,7 @@ void SCFT::initializeSystem() {
     prevMix = new double[mixKeep];
 
     // Anderson mixing variable
-    anderM = 5;
+    anderM = 6;
 
     // Minimum iterations
     minIters = 5e3;
