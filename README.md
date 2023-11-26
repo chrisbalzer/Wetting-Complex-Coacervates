@@ -4,7 +4,7 @@ This repository generally contains routines to study interfacial behavior for po
 **Author** - Christopher Balzer
 
 ## Compiling and Running Code
-Navigate to ``run/`` and compile using the Makefile with ``make``.  Note that the default compiler is ``g++-9``, but any ``g++`` compiler that has ``OpenMP`` support will work.
+Navigate to ``run/`` and compile using the Makefile with ``make``.  Note that the default compiler in the Makefile is ``g++`` with the OpenMP flag. The program should compile with any ``gcc`` compiler that supports OpenMP. 
 
 ### Starting a calculation
 Once you have compiled, edit the ``input.dat`` file as necessary. Then run the command

@@ -1,5 +1,5 @@
 # Select compiler and libraries to link
-CXX=g++-9 -fopenmp -std=c++17
+CXX=g++ -fopenmp -std=c++17
 DIR_SRC=../src
 DIR_INC=-I ../src/external/
 CFLAGS=-Wall -g -O3 $(DIR_INC)
